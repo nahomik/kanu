@@ -1,0 +1,111 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Best Login Page design in html and css</title>
+<style type="text/css"/>
+body {
+background-color: #gold;
+color: #5a5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.2em;
+}
+a { text-decoration: none; }
+h1 { font-size: 1em; }
+h1, p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+#login {
+margin: 50px auto;
+width: 300px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #e5e5e5;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #5a5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;
+height: 50px;
+outline: none;
+padding: 0px 10px;
+width: 280px;
+}
+form fieldset input[type="submit"] {
+background-color: #008dde;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 300px;
+
+}
+form fieldset a {
+color: #5a5656;
+font-size: 10px;
+}
+form fieldset a:hover { text-decoration: underline; }
+.btn-round {
+background-color: #5a5656;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+color: #f4f4f4;
+display: block;
+font-size: 12px;
+height: 50px;
+line-height: 50px;
+margin: 30px 125px;
+text-align: center;
+text-transform: uppercase;
+width: 50px;
+}
+
+</style>
+</head>
+<body bgcolor="silver">
+<div id="login">
+<h1><strong> AMU SMIS Registration</strong> Form.</h1>
+<form action="form.php" method="post">
+<fieldset>
+<p><input type="text" required placeholder="FirstName" onBlur="if(this.value=='')this.value='First Name'" onFocus="if(this.value=='First Name')this.value='' "></p>
+<p><input type="text" required placeholder="MiddleName" onBlur="if(this.value=='')this.value='Middle Name'" onFocus="if(this.value=='Middle Name')this.value='' "></p>
+<p><input type="text" required placeholder="LastName" onBlur="if(this.value=='')this.value='Last Name'" onFocus="if(this.value=='Last Name')this.value='' "></p>
+<p><input type="text" required placeholder="BirthofDate" onBlur="if(this.value=='')this.value='Birth of Date'" onFocus="if(this.value=='Birth of Date')this.value='' "></p>
+<p><input type="text" required placeholder="Address" onBlur="if(this.value=='')this.value='Address'" onFocus="if(this.value=='Address')this.value='' "></p>
+<p><input type="text" required placeholder="Phone" onBlur="if(this.value=='')this.value='Phone'" onFocus="if(this.value=='Phone')this.value='' "></p>
+<p><input type="text" required placeholder="Nationality" onBlur="if(this.value=='')this.value='Nationality'" onFocus="if(this.value=='Nationality')this.value='' "></p>
+<p><input type="text" required placeholder="Email" onBlur="if(this.value=='')this.value='E-mail'" onFocus="if(this.value=='E-mail')this.value='' "></p>
+<form action="">
+Gender:-<input type="checkbox" name="Gender" value="Gender">Male
+        <input type="checkbox" name="Gender" value="Gender">Female
+</form><br><br>
+Select Program:<select>
+<option value="Program Lsit"selected>Program List</option Value>
+  <option value="Regular">Regular</option>
+  <option value="Extension">Extension</option>
+  <option value="Summer">Summer</option>
+  <option value="Distance">Distance</option>
+</select>
+<p><a href="#">What Can I Help You?</a></p>
+<p><input type="submit" value="Register"></p>
+<p><input type="submit" value="Clear"></p>
+
+</fieldset>
+</form>
+</div> <!-- end login -->
+</body>
+</html>
